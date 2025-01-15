@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 58.727 s <<< FAILURE! - in TestSuite
+runScenario(cucumber.TestNGTestRunner)  Time elapsed: 1.908 s  <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step '"Incorrect email or password." message displayed' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("{string} message displayed")
+public void message_displayed(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+submitOrder(frameworklrn.tests.SubmitOrderTest)  Time elapsed: 30.794 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at frameworklrn.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:42)
+
